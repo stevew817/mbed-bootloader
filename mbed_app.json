@@ -151,6 +151,22 @@
             "update-client.application-details": "(MBED_CONF_APP_FLASH_START_ADDRESS+64*1024)",
             "application-start-address"        : "(MBED_CONF_APP_FLASH_START_ADDRESS+65*1024)",
             "max-application-size"             : "DEFAULT_MAX_APPLICATION_SIZE"
+        },
+        "TB_SENSE_12": {
+            "target.macros_add"                : ["EM_MSC_RUN_FROM_FLASH"],
+            "flash-start-address"              : "0x0",
+            "flash-size"                       : "(1024*1024)",
+            "sotp-section-1-address"           : "(MBED_CONF_APP_FLASH_START_ADDRESS+32*1024)",
+            "sotp-section-1-size"              : "(2*1024)",
+            "sotp-section-2-address"           : "(MBED_CONF_APP_FLASH_START_ADDRESS+34*1024)",
+            "sotp-section-2-size"              : "(2*1024)",
+            "update-client.application-details": "(MBED_CONF_APP_FLASH_START_ADDRESS+36*1024)",
+            "application-start-address"        : "(MBED_CONF_APP_FLASH_START_ADDRESS+38*1024)",
+            "max-application-size"             : "DEFAULT_MAX_APPLICATION_SIZE",
+            "spif-driver.SPI_MOSI"             : "PK0",
+            "spif-driver.SPI_MISO"             : "PK2",
+            "spif-driver.SPI_CLK"              : "PF7",
+            "spif-driver.SPI_CS"               : "PK1"
         }
     }
 }

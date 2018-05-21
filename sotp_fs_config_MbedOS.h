@@ -24,6 +24,7 @@
 #define PAL_USE_HW_TRNG 1
 #define PAL_SIMULATOR_FLASH_OVER_FILE_SYSTEM 0
 #define PAL_USE_INTERNAL_FLASH 1
+#define PAL_INT_FLASH_NUM_SECTIONS 2
 #define PAL_USE_SECURE_TIME 1
 
 #include "mbedOS_default.h"
